@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: tiendavirtual
+Implementation-Version: 1.0.0.BUILD-SNAPSHOT
+Built-By: Lino
+Implementation-Vendor-Id: org.spring.roo.tiendavirtual
+Build-Jdk: 1.8.0_172
+Implementation-URL: http://platform.spring.io/platform/tiendavirtual/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

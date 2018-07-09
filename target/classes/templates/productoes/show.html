@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-decorate="~{layouts/default-list-layout}">
+  <head id="head">
+
+    <title data-th-text="|#{label_show_entity(#{label_producto})}|">Show Producto - Spring Roo application</title>
+
+  </head>
+
+  <body id="body">
+
+    <header role="banner">
+      <!-- Content replaced by layout of the page displayed -->
+    </header>
+
+    <!--CONTAINER-->
+    <div class="container bg-container">
+      <!-- CONTENT -->
+      <!--
+        Only the inner content of the following tag "section" is included
+        within the template, in the section "content"
+      -->
+      <section data-layout-fragment="content" data-th-object="${producto}">
+        <div class="container-fluid content">
+
+          <!-- CONTENT -->
+          <h1 data-th-text="#{label_show_entity(#{label_producto})}">Show Producto</h1>
+
+            <div id="mainEntityFieldSet">
+              <h2 data-th-text="#{label_data_entity(#{label_producto})}">Producto data</h2>
+              <ul class="list-unstyled" id="containerFields">
+                  <li id="producto-nombre-field" data-z="71dae14b">
+            	      <strong data-th-text="#{label_producto_nombre}">nombre</strong>
+                    <span data-th-text="*{{nombre}}">nombreValue</span>
+         	        </li>
+                  <li id="producto-descripcion-field" data-z="93bc1833">
+            	      <strong data-th-text="#{label_producto_descripcion}">descripcion</strong>
+                    <span data-th-text="*{{descripcion}}">descripcionValue</span>
+         	        </li>
+                  <li id="producto-detalles-field" data-z="3ece97eb">
+            	      <strong data-th-text="#{label_producto_detalles}">detalles</strong>
+                    <span data-th-text="*{{detalles}}">detallesValue</span>
+         	        </li>
+                  <li id="producto-inicio-field" data-z="24597dcb">
+            	      <strong data-th-text="#{label_producto_inicio}">inicio</strong>
+                    <span data-th-text="*{{inicio}}">inicioValue</span>
+         	        </li>
+                  <li id="producto-fin-field" data-z="4b33f873">
+            	      <strong data-th-text="#{label_producto_fin}">fin</strong>
+                    <span data-th-text="*{{fin}}">finValue</span>
+         	        </li>
+                  <li id="producto-precio-field" data-z="412de5ab">
+            	      <strong data-th-text="#{label_producto_precio}">precio</strong>
+                    <span data-th-text="*{{precio}}">precioValue</span>
+         	        </li>
+              </ul>
+            </div>
+
+
+          <div class="clearfix">
+            <div class="pull-right">
+             <a id="Producto_edit" href="edit.html" class="btn btn-primary" data-th-title="#{label_goEdit}" data-th-href="${@linkBuilder.of('ProductoesItemThymeleafController').to('editForm').with('producto', producto.id)}" data-th-text="#{label_edit}">Edit</a>
+            </div>
+          </div>
+
+
+          <div class="clearfix">
+            <div class="pull-left">
+              <a id="Producto_list" href="list.html" class="btn btn-default" data-th-title="#{label_goBack}" data-th-href="${@linkBuilder.of('ProductoesCollectionThymeleafController').to('list')}">
+  	             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  	             <span data-th-text="#{label_back}">Back</span>
+  	          </a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- /CONTENT -->
+  </div>
+  <!-- /CONTAINER -->
+
+  <footer class="container">
+    <!-- Content replaced by layout of the page displayed -->
+  </footer>
+
+  <!-- JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so that the pages load faster -->
+  <!-- JavaScript loaded by layout of the page displayed -->
+  <!--
+       Only the inner content of the following tag "javascript" is included
+       within the template, in the div "javascript"
+      -->
+  <div data-layout-fragment="javascript">
+  </div>
+
+  </body>
+
+</html>

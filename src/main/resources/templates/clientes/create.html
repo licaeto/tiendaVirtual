@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-decorate="~{layouts/default-layout}">
+  <head id="head">
+
+    <title data-th-text="#{label_create_entity(#{label_cliente})}">
+      Create Cliente - tiendavirtual - SpringRoo Application</title>
+
+    <!-- DateTimePicker -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.min.css" data-th-href="@{/webjars/datetimepicker/build/jquery.datetimepicker.min.css}" />
+
+  </head>
+
+  <body id="body">
+
+    <header role="banner">
+      <!-- Content replaced by layout of the page displayed -->
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container bg-container">
+      <!-- CONTENT -->
+      <!--
+        Only the inner content of the following tag "section" is included
+        within the template, in the section "content"
+      -->
+      <section data-layout-fragment="content">
+        <div class="container-fluid content" data-th-with="collectionLink=${@linkBuilder.of('ClientesCollectionThymeleafController')}">
+
+          <h1 data-th-text="#{label_create_entity(#{label_cliente})}">Create Cliente</h1>
+
+          <!-- FORM -->
+          <form class="form-horizontal validate" method="POST" data-th-object="${cliente}" data-th-action="${collectionLink.to('create').with('cliente', cliente.id)}">
+
+            <fieldset id="containerFields">
+              <legend class="sr-only" data-th-text="#{label_data_entity(#{label_cliente})}">Cliente data </legend>
+
+<div class="form-group has-error has-feedback" data-z="82f7950f" id="cliente-username-field" data-th-classappend="${#fields.hasErrors('username')}? 'has-error has-feedback'" data-th-class="form-group">
+  <label for="username" class="col-md-3 control-label" data-th-text="#{label_cliente_username}">username</label>
+  <div class="col-md-6">
+    <input id="username" name="username" data-th-value="*{{username}}" type="text" class="form-control" placeholder="username" data-th-placeholder="#{label_cliente_username}" data-toggle="tooltip" aria-describedby="usernameStatus" />
+      <span data-th-classappend="${#fields.hasErrors('username')}? 'glyphicon glyphicon-remove form-control-feedback'" class="glyphicon glyphicon-remove form-control-feedback" data-th-if="${#fields.hasErrors('username')}" aria-hidden="true"></span>
+      <span id="username-error" class="help-block" data-th-if="${#fields.hasErrors('username')}" data-th-errors="*{username}">Error message.</span>
+  </div>
+</div>
+<div class="form-group has-error has-feedback" data-z="f7b8706f" id="cliente-password-field" data-th-classappend="${#fields.hasErrors('password')}? 'has-error has-feedback'" data-th-class="form-group">
+  <label for="password" class="col-md-3 control-label" data-th-text="#{label_cliente_password}">password</label>
+  <div class="col-md-6">
+    <input id="password" name="password" data-th-value="*{{password}}" type="text" class="form-control" placeholder="password" data-th-placeholder="#{label_cliente_password}" data-toggle="tooltip" aria-describedby="passwordStatus" />
+      <span data-th-classappend="${#fields.hasErrors('password')}? 'glyphicon glyphicon-remove form-control-feedback'" class="glyphicon glyphicon-remove form-control-feedback" data-th-if="${#fields.hasErrors('password')}" aria-hidden="true"></span>
+      <span id="password-error" class="help-block" data-th-if="${#fields.hasErrors('password')}" data-th-errors="*{password}">Error message.</span>
+  </div>
+</div>
+<div class="form-group has-error has-feedback" data-z="df060e6f" id="cliente-nombrecompleto-field" data-th-classappend="${#fields.hasErrors('nombreCompleto')}? 'has-error has-feedback'" data-th-class="form-group">
+  <label for="nombreCompleto" class="col-md-3 control-label" data-th-text="#{label_cliente_nombrecompleto}">nombreCompleto</label>
+  <div class="col-md-6">
+    <input id="nombreCompleto" name="nombreCompleto" data-th-value="*{{nombreCompleto}}" type="text" class="form-control" placeholder="nombreCompleto" data-th-placeholder="#{label_cliente_nombrecompleto}" data-toggle="tooltip" aria-describedby="nombreCompletoStatus" />
+      <span data-th-classappend="${#fields.hasErrors('nombreCompleto')}? 'glyphicon glyphicon-remove form-control-feedback'" class="glyphicon glyphicon-remove form-control-feedback" data-th-if="${#fields.hasErrors('nombreCompleto')}" aria-hidden="true"></span>
+      <span id="nombreCompleto-error" class="help-block" data-th-if="${#fields.hasErrors('nombreCompleto')}" data-th-errors="*{nombreCompleto}">Error message.</span>
+  </div>
+</div>
+<div class="form-group has-error has-feedback" data-z="2c6763af" id="cliente-direccionpostal-field" data-th-classappend="${#fields.hasErrors('direccionPostal')}? 'has-error has-feedback'" data-th-class="form-group">
+  <label for="direccionPostal" class="col-md-3 control-label" data-th-text="#{label_cliente_direccionpostal}">direccionPostal</label>
+  <div class="col-md-6">
+    <input id="direccionPostal" name="direccionPostal" data-th-value="*{{direccionPostal}}" type="text" class="form-control" placeholder="direccionPostal" data-th-placeholder="#{label_cliente_direccionpostal}" data-toggle="tooltip" aria-describedby="direccionPostalStatus" />
+      <span data-th-classappend="${#fields.hasErrors('direccionPostal')}? 'glyphicon glyphicon-remove form-control-feedback'" class="glyphicon glyphicon-remove form-control-feedback" data-th-if="${#fields.hasErrors('direccionPostal')}" aria-hidden="true"></span>
+      <span id="direccionPostal-error" class="help-block" data-th-if="${#fields.hasErrors('direccionPostal')}" data-th-errors="*{direccionPostal}">Error message.</span>
+  </div>
+</div>
+<div class="form-group has-error has-feedback" data-z="2d88c36f" id="cliente-email-field" data-th-classappend="${#fields.hasErrors('email')}? 'has-error has-feedback'" data-th-class="form-group">
+  <label for="email" class="col-md-3 control-label" data-th-text="#{label_cliente_email}">email</label>
+  <div class="col-md-6">
+    <input id="email" name="email" data-th-value="*{{email}}" type="text" class="form-control" placeholder="email" data-th-placeholder="#{label_cliente_email}" data-toggle="tooltip" aria-describedby="emailStatus" />
+      <span data-th-classappend="${#fields.hasErrors('email')}? 'glyphicon glyphicon-remove form-control-feedback'" class="glyphicon glyphicon-remove form-control-feedback" data-th-if="${#fields.hasErrors('email')}" aria-hidden="true"></span>
+      <span id="email-error" class="help-block" data-th-if="${#fields.hasErrors('email')}" data-th-errors="*{email}">Error message.</span>
+  </div>
+</div>
+<div class="form-group has-error has-feedback" id="cliente-activo-field" data-z="fd3d1cf" data-th-classappend="${#fields.hasErrors('activo')}? 'has-error has-feedback'" data-th-class="form-group">
+  <label class="col-md-3 control-label" for="activo" data-th-text="#{label_cliente_activo}">activo</label>
+  <div class="col-md-6">
+    <div class="checkbox">
+      <input type="checkbox" data-th-field="*{activo}" data-th-title="#{label_requiredfield}" data-toggle="tooltip" />
+       <span data-th-classappend="${#fields.hasErrors('activo')}? 'form-control-feedback'" class="glyphicon glyphicon-remove form-control-feedback" data-th-if="${#fields.hasErrors('activo')}" aria-hidden="true"></span>
+        <span id="activo-error" class="help-block" data-th-if="${#fields.hasErrors('activo')}" data-th-errors="*{activo}">Error message.</span>
+    </div>
+  </div>
+</div>
+            </fieldset>
+
+
+              <!-- buttons form -->
+              <div class="form-group">
+                <div class="col-md-9 col-md-offset-3">
+                    <button type="submit" class="btn btn-primary" data-th-text="#{label_save}">Save</button>
+                    <button type="reset" class="btn btn-default" onclick="location.href='list.html'" data-th-onclick="'location.href=\'' + @{${collectionLink.to('list')}} + '\''" data-th-text="#{label_reset}">Cancel</button>
+                </div>
+              </div>
+
+          </form>
+          <!-- /FORM -->
+
+        </div>
+
+      </section>
+      <!-- /CONTENT -->
+  </div>
+  <!-- /CONTAINER -->
+
+  <footer class="container">
+    <!-- Content replaced by layout of the page displayed -->
+  </footer>
+
+  <!-- JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so that the pages load faster -->
+  <!-- JavaScript loaded by layout of the page displayed -->
+  <!--
+       Only the inner content of the following tag "javascript" is included
+       within the template, in the div "javascript"
+      -->
+  <div data-layout-fragment="javascript">
+
+    <!-- DateTimePicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js" data-th-src="@{/webjars/datetimepicker/build/jquery.datetimepicker.full.min.js}"></script>
+    <script src="../../static/public/js/datetimepicker-defaults.js" data-th-src="@{/public/js/datetimepicker-defaults.js}"></script>
+
+    <!-- jquery.inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.1/jquery.inputmask.bundle.min.js" data-th-src="@{/webjars/jquery.inputmask/min/jquery.inputmask.bundle.min.js}"></script>
+    <script type="text/javascript" data-th-inline="javascript">
+					(function(jQuery) {
+						jQuery(document)
+								.ready(
+										function() {
+											Inputmask
+													.extendAliases({
+														'numeric' : {
+															'groupSeparator' : /*[[#{label_inputmask_groupSeparator}]]*/'.',
+															'radixPoint' : /*[[#{label_inputmask_radixPoint}]]*/','
+														},
+														'currency' : {
+															'prefix' : /*[[#{label_inputmask_prefix}]]*/'',
+															'suffix' : /*[[#{label_inputmask_suffix}]]*/' €'
+														}
+													});
+										});
+					})(jQuery);
+  		</script>
+    <script src="../../static/public/js/inputmask-defaults.js" data-th-src="@{/public/js/inputmask-defaults.js}"></script>
+
+    <!-- JQuery Validation -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js" data-th-src="@{/webjars/jquery-validation/dist/jquery.validate.min.js}">
+		  </script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js" data-th-src="@{/webjars/jquery-validation/dist/additional-methods.min.js}">
+			</script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/localization/messages_es.js" data-th-src="@{/webjars/jquery-validation/src/localization/messages_}+${#locale.language}+'.js'" data-th-if="${#locale.language} != 'en'">
+			</script>
+    <script src="../../static/public/js/validation-defaults.js" data-th-src="@{/public/js/validation-defaults.js}">
+			</script>
+
+    <script type="text/javascript" data-th-inline="javascript">
+					(function(jQuery) {
+						jQuery(document)
+								.ready(
+										function() {
+											jQuery
+													.extend(
+															jQuery.validator.messages,
+															{
+																'dateformat' : /*[[#{error_invalid_date}]]*/'Please enter a correct date/time',
+																'inputmask' : /*[[#{error_invalid_maskValue}]]*/'Please enter a valid value',
+															});
+										});
+					})(jQuery);
+		  </script>
+
+    </div>
+
+  </body>
+
+</html>

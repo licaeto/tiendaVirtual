@@ -1,0 +1,57 @@
+// Spring Roo 2.0.0.RELEASE [rev 4a2e9f1] log opened at 2018-07-09 09:40:16
+project setup --topLevelPackage org.spring.roo.tiendavirtual --projectName "tiendavirtual" --java 8 --packaging JAR
+// Spring Roo 2.0.0.RELEASE [rev 4a2e9f1] log closed at 2018-07-09 09:40:18
+// Spring Roo 2.0.0.RELEASE [rev 4a2e9f1] log opened at 2018-07-09 09:40:23
+hint
+jpa setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT 
+property list 
+property list --profile dev
+property add --key spring.jpa.hibernate.ddl-auto --value update
+// script --file C:\Users\Lino\Desktop\scripts\p1.roo
+enum type --class ~.domain.enumerated.Detalles 
+enum constant --name Verde
+enum constant --name Rojo
+enum constant --name Azul
+enum constant --name S
+enum constant --name M
+enum constant --name L
+enum constant --name XL
+entity jpa --class ~.domain.Producto 
+field string --fieldName nombre
+field string --fieldName descripcion
+field enum --fieldName detalles --type ~.domain.enumerated.Detalles
+field date --fieldName inicio --type java.util.Date
+field date --fieldName fin --type java.util.Date
+field number --fieldName precio --type java.lang.Float
+entity jpa --class ~.domain.Cliente
+field string --fieldName username 
+field string --fieldName password
+field string --fieldName nombreCompleto
+field string --fieldName direccionPostal
+field string --fieldName email
+field boolean --fieldName activo
+entity jpa --class ~.domain.Pedido --identifierField identificadorPedido
+field number --fieldName total --type java.lang.Float
+focus --class ~.domain.Cliente
+field set --fieldName pedidos --type ~.domain.Pedido 
+entity jpa --class ~.domain.LineaPedido
+focus --class ~.domain.Pedido
+field set --fieldName lineasPedido --type ~.domain.LineaPedido 
+focus --class ~.domain.LineaPedido
+field number --fieldName cantidad --type int
+field number --fieldName precio --type java.lang.Float
+focus --class ~.domain.Pedido
+focus --class ~.domain.Producto
+field set --fieldName lineasPedido --type ~.domain.LineaPedido 
+hint
+// script --file C:\Users\Lino\Desktop\scripts\p2.roo
+repository jpa --all
+finder add --entity ~.domain.Cliente --name findByUsernameOrEmail 
+finder add --entity ~.domain.Producto --name findByNombreOrPrecioGreaterThanOrDescripcionContains
+// script --file C:\Users\Lino\Desktop\scripts\p3.roo
+service --all
+// script --file C:\Users\Lino\Desktop\scripts\p4.roo
+web mvc setup 
+web mvc view setup --type THYMELEAF 
+web mvc controller --all --responseType THYMELEAF 
+// script --file C:\Users\Lino\Desktop\scripts\p5.roo

@@ -1,0 +1,24 @@
+<!--TABLE-->
+<div class="table-responsive" id="containerFields" data-th-fragment="producto-entityModalConfirmBody" data-th-with="collectionLink=${@linkBuilder.of('ProductoesCollectionThymeleafController')},itemLink=${@linkBuilder.of('ProductoesItemThymeleafController')}">
+    <table id="producto-entity-table-items-to-remove-batch" data-data-load-url="${collectionLink.to('datatablesByIdsIn')}">
+      <thead>
+        <tr>
+          <th data-data="nombre" data-th-text="#{label_producto_nombre}">nombre</th>
+          <th data-data="descripcion" data-th-text="#{label_producto_descripcion}">descripcion</th>
+          <th data-data="detalles" data-th-text="#{label_producto_detalles}">detalles</th>
+          <th data-data="inicio" data-th-text="#{label_producto_inicio}">inicio</th>
+          <th data-data="fin" data-th-text="#{label_producto_fin}">fin</th>
+        </tr>
+      </thead>
+      <tbody data-th-remove="all">
+        <tr>
+          <td>nombre</td>
+          <td>descripcion</td>
+          <td>detalles</td>
+          <td>inicio</td>
+          <td>fin</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<!-- /TABLE -->

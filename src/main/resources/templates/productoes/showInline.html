@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-decorate="~{layouts/default-list-layout}">
+    <head id="head">
+
+    <title data-th-text="|#{label_show_entity(#{label_producto})}|">Show Producto - Spring Roo application</title>
+
+  </head>
+
+  <body id="body">
+
+    <header role="banner">
+      <!-- Content replaced by layout of the page displayed -->
+    </header>
+
+    <!--CONTAINER-->
+    <div class="container bg-container">
+      <!-- CONTENT -->
+      <!--
+        Only the inner content of the following tag "section" is included
+        within the template, in the section "content"
+      -->
+      <section data-th-fragment="inline-content" data-layout-fragment="content" data-th-object="${producto}">
+        <div>
+
+          <!-- CONTENT -->
+            <div id="mainEntityFieldSet">
+              <ul class="list-unstyled" id="containerFields">
+                  <li id="producto-nombre-field" data-z="71dae14b">
+            	      <strong data-th-text="#{label_producto_nombre}">nombre</strong>
+                    <span data-th-text="*{{nombre}}">nombreValue</span>
+         	        </li>
+                  <li id="producto-descripcion-field" data-z="93bc1833">
+            	      <strong data-th-text="#{label_producto_descripcion}">descripcion</strong>
+                    <span data-th-text="*{{descripcion}}">descripcionValue</span>
+         	        </li>
+                  <li id="producto-detalles-field" data-z="3ece97eb">
+            	      <strong data-th-text="#{label_producto_detalles}">detalles</strong>
+                    <span data-th-text="*{{detalles}}">detallesValue</span>
+         	        </li>
+                  <li id="producto-inicio-field" data-z="24597dcb">
+            	      <strong data-th-text="#{label_producto_inicio}">inicio</strong>
+                    <span data-th-text="*{{inicio}}">inicioValue</span>
+         	        </li>
+                  <li id="producto-fin-field" data-z="4b33f873">
+            	      <strong data-th-text="#{label_producto_fin}">fin</strong>
+                    <span data-th-text="*{{fin}}">finValue</span>
+         	        </li>
+                  <li id="producto-precio-field" data-z="412de5ab">
+            	      <strong data-th-text="#{label_producto_precio}">precio</strong>
+                    <span data-th-text="*{{precio}}">precioValue</span>
+         	        </li>
+              </ul>
+            </div>
+
+        </div>
+
+      </section>
+      <!-- /CONTENT -->
+  </div>
+  <!-- /CONTAINER -->
+
+  <footer class="container">
+    <!-- Content replaced by layout of the page displayed -->
+  </footer>
+
+  <!-- JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so that the pages load faster -->
+  <!-- JavaScript loaded by layout of the page displayed -->
+  <!--
+       Only the inner content of the following tag "javascript" is included
+       within the template, in the div "javascript"
+      -->
+  <div data-layout-fragment="javascript">
+  </div>
+
+  </body>
+
+</html>

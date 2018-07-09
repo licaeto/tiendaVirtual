@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-decorate="~{layouts/default-list-layout}">
+    <head id="head">
+
+    <title data-th-text="|#{label_show_entity(#{label_cliente})}|">Show Cliente - Spring Roo application</title>
+
+  </head>
+
+  <body id="body">
+
+    <header role="banner">
+      <!-- Content replaced by layout of the page displayed -->
+    </header>
+
+    <!--CONTAINER-->
+    <div class="container bg-container">
+      <!-- CONTENT -->
+      <!--
+        Only the inner content of the following tag "section" is included
+        within the template, in the section "content"
+      -->
+      <section data-th-fragment="inline-content" data-layout-fragment="content" data-th-object="${cliente}">
+        <div>
+
+          <!-- CONTENT -->
+            <div id="mainEntityFieldSet">
+              <ul class="list-unstyled" id="containerFields">
+                  <li id="cliente-username-field" data-z="82f7950f">
+            	      <strong data-th-text="#{label_cliente_username}">username</strong>
+                    <span data-th-text="*{{username}}">usernameValue</span>
+         	        </li>
+                  <li id="cliente-password-field" data-z="f7b8706f">
+            	      <strong data-th-text="#{label_cliente_password}">password</strong>
+                    <span data-th-text="*{{password}}">passwordValue</span>
+         	        </li>
+                  <li id="cliente-nombrecompleto-field" data-z="df060e6f">
+            	      <strong data-th-text="#{label_cliente_nombrecompleto}">nombreCompleto</strong>
+                    <span data-th-text="*{{nombreCompleto}}">nombreCompletoValue</span>
+         	        </li>
+                  <li id="cliente-direccionpostal-field" data-z="2c6763af">
+            	      <strong data-th-text="#{label_cliente_direccionpostal}">direccionPostal</strong>
+                    <span data-th-text="*{{direccionPostal}}">direccionPostalValue</span>
+         	        </li>
+                  <li id="cliente-email-field" data-z="2d88c36f">
+            	      <strong data-th-text="#{label_cliente_email}">email</strong>
+                    <span data-th-text="*{{email}}">emailValue</span>
+         	        </li>
+                  <li id="cliente-activo-field" data-z="fd3d1cf">
+            	      <strong data-th-text="#{label_cliente_activo}">activo</strong>
+                    <span data-th-text="*{{activo}}">activoValue</span>
+         	        </li>
+              </ul>
+            </div>
+
+        </div>
+
+      </section>
+      <!-- /CONTENT -->
+  </div>
+  <!-- /CONTAINER -->
+
+  <footer class="container">
+    <!-- Content replaced by layout of the page displayed -->
+  </footer>
+
+  <!-- JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so that the pages load faster -->
+  <!-- JavaScript loaded by layout of the page displayed -->
+  <!--
+       Only the inner content of the following tag "javascript" is included
+       within the template, in the div "javascript"
+      -->
+  <div data-layout-fragment="javascript">
+  </div>
+
+  </body>
+
+</html>

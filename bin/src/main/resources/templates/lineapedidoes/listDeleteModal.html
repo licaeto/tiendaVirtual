@@ -1,0 +1,22 @@
+<!--TABLE-->
+<div class="table-responsive" id="containerFields" data-th-fragment="lineapedido-entityModalConfirmBody" data-th-with="collectionLink=${@linkBuilder.of('LineaPedidoesCollectionThymeleafController')},itemLink=${@linkBuilder.of('LineaPedidoesItemThymeleafController')}">
+    <table id="lineapedido-entity-table-item-to-remove" data-data-load-url="${collectionLink.to('datatablesByIdsIn')}">
+      <thead>
+        <tr>
+          <th data-data="pedido" data-th-text="#{label_lineapedido_pedido}">pedido</th>
+          <th data-data="cantidad" data-th-text="#{label_lineapedido_cantidad}">cantidad</th>
+          <th data-data="precio" data-th-text="#{label_lineapedido_precio}">precio</th>
+          <th data-data="producto" data-th-text="#{label_lineapedido_producto}">producto</th>
+        </tr>
+      </thead>
+      <tbody data-th-remove="all">
+        <tr>
+          <td>pedido</td>
+          <td>cantidad</td>
+          <td>precio</td>
+          <td>producto</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<!-- /TABLE -->

@@ -1,0 +1,62 @@
+<aspectj>
+<aspects>
+<aspect name="org.spring.roo.tiendavirtual.web.PedidoesItemThymeleafLinkFactory_Roo_LinkFactory"/>
+<aspect name="org.spring.roo.tiendavirtual.domain.Pedido_Roo_JavaBean"/>
+<aspect name="org.spring.roo.tiendavirtual.web.PedidoesCollectionThymeleafLinkFactory_Roo_LinkFactory"/>
+<aspect name="org.spring.roo.tiendavirtual.domain.LineaPedido_Roo_JavaBean"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ClientesCollectionThymeleafController_Roo_Thymeleaf"/>
+<aspect name="org.spring.roo.tiendavirtual.config.WebMvcConfiguration_Roo_ThymeleafUIConfiguration"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ProductoesCollectionThymeleafController_Roo_Thymeleaf"/>
+<aspect name="org.spring.roo.tiendavirtual.web.PedidoesCollectionThymeleafController_Roo_Thymeleaf"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.LineaPedidoRepositoryImpl_Roo_Jpa_Repository_Impl"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.ProductoRepository_Roo_Jpa_Repository"/>
+<aspect name="org.spring.roo.tiendavirtual.service.impl.LineaPedidoServiceImpl_Roo_Service_Impl"/>
+<aspect name="org.spring.roo.tiendavirtual.web.PedidoesItemThymeleafController_Roo_Thymeleaf"/>
+<aspect name="org.spring.roo.tiendavirtual.web.LineaPedidoDeserializer_Roo_EntityDeserializer"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ProductoesItemThymeleafLinkFactory_Roo_LinkFactory"/>
+<aspect name="org.spring.roo.tiendavirtual.web.LineaPedidoesCollectionThymeleafController_Roo_Thymeleaf"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.LineaPedidoRepository_Roo_Jpa_Repository"/>
+<aspect name="org.spring.roo.tiendavirtual.domain.Cliente_Roo_JavaBean"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ProductoJsonMixin_Roo_JSONMixin"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ProductoesCollectionThymeleafLinkFactory_Roo_LinkFactory"/>
+<aspect name="org.spring.roo.tiendavirtual.web.LineaPedidoesCollectionThymeleafLinkFactory_Roo_LinkFactory"/>
+<aspect name="org.spring.roo.tiendavirtual.web.MainController_Roo_Thymeleaf_MainController"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.PedidoRepositoryCustom_Roo_Jpa_Repository_Custom"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.ProductoRepositoryCustom_Roo_Jpa_Repository_Custom"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ProductoDeserializer_Roo_EntityDeserializer"/>
+<aspect name="org.spring.roo.tiendavirtual.domain.Producto_Roo_Jpa_Entity"/>
+<aspect name="org.spring.roo.tiendavirtual.service.api.PedidoService_Roo_Service"/>
+<aspect name="org.spring.roo.tiendavirtual.service.impl.ClienteServiceImpl_Roo_Service_Impl"/>
+<aspect name="org.spring.roo.tiendavirtual.domain.LineaPedido_Roo_Jpa_Entity"/>
+<aspect name="org.spring.roo.tiendavirtual.domain.Pedido_Roo_Jpa_Entity"/>
+<aspect name="org.spring.roo.tiendavirtual.service.impl.PedidoServiceImpl_Roo_Service_Impl"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ProductoesItemThymeleafController_Roo_Thymeleaf"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.PedidoRepository_Roo_Jpa_Repository"/>
+<aspect name="org.spring.roo.tiendavirtual.web.LineaPedidoJsonMixin_Roo_JSONMixin"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ClientesItemThymeleafLinkFactory_Roo_LinkFactory"/>
+<aspect name="org.spring.roo.tiendavirtual.service.api.ProductoService_Roo_Service"/>
+<aspect name="org.spring.roo.tiendavirtual.service.impl.ProductoServiceImpl_Roo_Service_Impl"/>
+<aspect name="org.spring.roo.tiendavirtual.web.PedidoJsonMixin_Roo_JSONMixin"/>
+<aspect name="org.spring.roo.tiendavirtual.domain.Cliente_Roo_Jpa_Entity"/>
+<aspect name="org.spring.roo.tiendavirtual.web.LineaPedidoesItemThymeleafLinkFactory_Roo_LinkFactory"/>
+<aspect name="org.spring.roo.tiendavirtual.web.PedidoDeserializer_Roo_EntityDeserializer"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.ClienteRepositoryCustom_Roo_Jpa_Repository_Custom"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.PedidoRepositoryImpl_Roo_Jpa_Repository_Impl"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.ClienteRepository_Roo_Jpa_Repository"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.ClienteRepositoryImpl_Roo_Jpa_Repository_Impl"/>
+<aspect name="org.spring.roo.tiendavirtual.config.WebMvcConfiguration_Roo_WebMvcConfiguration"/>
+<aspect name="org.spring.roo.tiendavirtual.domain.Producto_Roo_JavaBean"/>
+<aspect name="org.spring.roo.tiendavirtual.config.SpringDataJpaDetachableRepositoryConfiguration_Roo_Jpa_Repository_Configuration"/>
+<aspect name="org.spring.roo.tiendavirtual.config.jackson.DomainModelModule_Roo_DomainModelModule"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ClienteJsonMixin_Roo_JSONMixin"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ClientesCollectionThymeleafLinkFactory_Roo_LinkFactory"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.ProductoRepositoryImpl_Roo_Jpa_Repository_Impl"/>
+<aspect name="org.spring.roo.tiendavirtual.web.LineaPedidoesItemThymeleafController_Roo_Thymeleaf"/>
+<aspect name="org.spring.roo.tiendavirtual.service.api.ClienteService_Roo_Service"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ClienteDeserializer_Roo_EntityDeserializer"/>
+<aspect name="org.spring.roo.tiendavirtual.service.api.LineaPedidoService_Roo_Service"/>
+<aspect name="org.spring.roo.tiendavirtual.repository.LineaPedidoRepositoryCustom_Roo_Jpa_Repository_Custom"/>
+<aspect name="org.spring.roo.tiendavirtual.web.ClientesItemThymeleafController_Roo_Thymeleaf"/>
+</aspects>
+</aspectj>
+
